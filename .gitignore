@@ -1,6 +1,6 @@
 .idea
 node_modules
-webpack.config
+webpack.config.js
 gulpfile
 package.json
 package-lock.json
