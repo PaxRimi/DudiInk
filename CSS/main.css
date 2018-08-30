@@ -1,0 +1,300 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background-image: url("../img/what-the-hex.png");
+    background-repeat: repeat;
+    color: black;
+    font-family: sans-serif; }
+
+.container { max-width: 1200px; margin: 0 auto; width: 100%; }
+
+.container header { display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px dashed red;
+    font-family: 'Mirza', sans-serif;
+    font-size: 18px;
+}
+
+.container header img { width: 200px;
+                        height: 200px;
+                        margin: 10px;
+    }
+
+.container header .bigScreenText {
+    display: none;
+}
+
+@media only screen and (min-width: 700px) {
+    .container header {
+        flex-direction: row;
+    }
+
+    .container header .phoneTxT{
+        display: none;
+    }
+
+    .container header .bigScreenText {
+        display: inline;
+    }
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px dashed red;
+}
+
+.gallery h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.gallery .phone {
+    width: 250px;
+    height: 370px;
+}
+.gallery .tabletGallery img {
+    width: 250px;
+    height: 370px;
+}
+
+.gallery .tabletGallery {
+    display: none;
+}
+
+@media only screen and (min-width: 800px) {
+    .container .gallery .tabletGallery {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container .phone {
+        display: none;
+    }
+
+    .container .gallery .tabletGallery img{
+        padding-right: 20px;
+    }
+
+    .container .gallery .tabletGallery figcaption {
+        margin-bottom: 10px;
+    }
+}
+
+.artists {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px dashed red;
+}
+
+.artist {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: black;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.Dudi{
+    background-image: url("../img/2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Ula {
+    background-image: url("../img/4.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Chesnut {
+    background-image: url("../img/6.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Tama{
+    background-image: url("../img/5.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.artist h3{
+    padding-bottom: 50px;
+}
+
+.artists span a {
+    display: none;
+}
+
+.artists span a i {
+    color: black;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.artists span .insta {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 800px) {
+    .container .artists {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container .artist {
+        margin: 10px;
+    }
+}
+
+.container .form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px dashed red;
+}
+
+.container .form h2 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.container .form .errorTxt {
+    color: red;
+    margin-bottom: 5px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    border: none;
+}
+
+.form form .inputTxT {
+    background-color: grey;
+    border: darkgrey;
+    color: darkred;
+    font-weight: bold;
+    font-size: 17px;
+    width: 100%;
+    height: 25px;
+    margin: 10px 0;
+}
+
+.form form textarea{
+    width: 100%;
+    height: 80px;
+    background-color: grey;
+    border: darkgrey;
+    color: darkred;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.form form fieldset span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form form input[type="submit"] {
+    width: 100px;
+    height: 40px;
+}
+
+@media only screen and (min-width: 800px){
+    .form form {
+        width: 800px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px dashed red;
+}
+
+.map i{
+    font-size: 35px;
+    margin: 20px 10px;
+    color: black;
+}
+.map iframe {
+    width: 300px;
+    height: 200px;
+    border: none;
+}
+
+@media only screen and (min-width: 800px){
+    .map iframe {
+        width: 700px;
+        height: 400px;
+    }
+
+    .map i {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .map i {
+        margin: 20px 40px;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px dashed red;
+}
+
+@media only screen and (min-width: 800px) {
+    footer{
+        align-items: flex-end;
+        padding-right: 20px;
+    }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyJcclxuKiB7XHJcbiAgbWFyZ2luOiAwO1xyXG4gIHBhZGRpbmc6IDA7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxufVxyXG5cclxuYm9keSB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzQ0NDtcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgZm9udC1mYW1pbHk6ICBzYW5zLXNlcmlmO1xyXG59XHJcblxyXG5cclxuLmNvbnRhaW5lciB7XHJcbiAgbWF4LXdpZHRoOiAxMDI0cHg7XHJcbiAgbWFyZ2luOiAwIGF1dG87XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVhZGVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIG1hcmdpbjogMTBweCAwO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgfVxyXG59Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBLEFBQUEsQ0FBQyxDQUFDLEVBQ0EsTUFBTSxFQUFFLENBQUMsRUFDVCxPQUFPLEVBQUUsQ0FBQyxFQUNWLFVBQVUsRUFBRSxVQUFVLEdBQ3ZCOztBQUVELEFBQUEsSUFBSSxDQUFDLEVBQ0gsZ0JBQWdCLEVBQUUsSUFBSSxFQUN0QixLQUFLLEVBQUUsS0FBSyxFQUNaLFdBQVcsRUFBRyxVQUFVLEdBQ3pCOztBQUdELEFBQUEsVUFBVSxDQUFDLEVBQ1QsU0FBUyxFQUFFLE1BQU0sRUFDakIsTUFBTSxFQUFFLE1BQU0sRUFDZCxLQUFLLEVBQUUsSUFBSSxHQVFaOztBQVhELEFBSUUsVUFKUSxDQUlSLE1BQU0sQ0FBQyxFQUNMLE9BQU8sRUFBRSxJQUFJLEVBQ2IsZUFBZSxFQUFFLE1BQU0sRUFDdkIsTUFBTSxFQUFFLE1BQU0sRUFDZCxLQUFLLEVBQUUsSUFBSSxFQUNYLFFBQVEsRUFBRSxRQUFRLEdBQ25CIn0= */
