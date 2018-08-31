@@ -99,7 +99,7 @@ body { background-color: white;
 
     .container .gallery .tabletGallery span{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
 }
