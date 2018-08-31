@@ -269,7 +269,7 @@ class Form extends React.Component{
                 <p className="errorTxt">{valArtist}</p>
                 <label>Opis tatuażu / Tattoo description *:
                     <br/>
-                    <textarea value={this.state.message} onChange={this.handleMessageChange}/>
+                    <textarea value={this.state.message} onChange={this.handleMessageChange} />
                 </label>
                 <p className="errorTxt">{valMessage}</p>
                 <span>
@@ -335,7 +335,7 @@ class Gallery extends React.Component{
         super(props);
 
         this.state = {
-            gallery: ["./img/photo1.jpg","./img/photo2.jpeg","./img/photo3.jpg","./img/photo4.jpg","./img/photo5.png","./img/photo6.png","./img/photo7.jpg","./img/photo8.jpg"],
+            gallery: ["./img/photo1.jpg","./img/photo2.jpeg","./img/photo3.jpeg","./img/photo7.png","./img/photo8.png","./img/photo9.png","./img/photo4.jpg","./img/photo5.jpg","./img/photo6.jpg","./img/photo10.jpg","./img/photo11.jpg","./img/photo12.jpg"],
             img: "./img/photo1.jpg",
         }
     }
@@ -366,6 +366,7 @@ class Gallery extends React.Component{
             <h2>Przykładowe prace/Some of our works:</h2>
             <img className="phone" src={this.state.img} alt="tattoo work"/>
             <div className="tabletGallery">
+                <span>
                 <figure>
                     <img src="./img/photo1.jpg" alt="tattoo work"/>
                     <figcaption>Dudi</figcaption>
@@ -375,34 +376,52 @@ class Gallery extends React.Component{
                     <figcaption>Dudi</figcaption>
                 </figure>
                 <figure>
-                    <img src="./img/photo3.jpg" alt="tattoo work"/>
-                    <figcaption>S.INK UP</figcaption>
+                <img src="./img/photo3.jpeg" alt="tattoo work"/>
+                <figcaption>Dudi</figcaption>
                 </figure>
+                </span>
+                <span>
+                <figure>
+                    <img src="./img/photo7.png" alt="tattoo work"/>
+                    <figcaption>Chestnut</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/photo8.png" alt="tattoo work"/>
+                    <figcaption>Chestnut</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/photo9.png" alt="tattoo work"/>
+                    <figcaption>Chestnut</figcaption>
+                </figure>
+                </span>
+                <span>
                 <figure>
                     <img src="./img/photo4.jpg" alt="tattoo work"/>
                     <figcaption>S.INK UP</figcaption>
                 </figure>
                 <figure>
-                    <img src="./img/photo5.png" alt="tattoo work"/>
-                    <figcaption>Chestnut</figcaption>
+                    <img src="./img/photo5.jpg" alt="tattoo work"/>
+                    <figcaption>S.INK UP</figcaption>
                 </figure>
                 <figure>
-                    <img src="./img/photo6.png" alt="tattoo work"/>
-                    <figcaption>Chestnut</figcaption>
+                    <img src="./img/photo6.jpg" alt="tattoo work"/>
+                    <figcaption>S.INK UP</figcaption>
                 </figure>
+                </span>
+                <span>
                 <figure>
-                    <img src="./img/photo7.jpg" alt="tattoo work"/>
+                    <img src="./img/photo10.jpg" alt="tattoo work"/>
                     <figcaption>Tama</figcaption>
                 </figure>
                 <figure>
-                    <img src="./img/photo8.jpg" alt="tattoo work"/>
+                    <img src="./img/photo11.jpg" alt="tattoo work"/>
                     <figcaption>Tama</figcaption>
                 </figure>
-
-
-
-
-
+                <figure>
+                    <img src="./img/photo12.jpg" alt="tattoo work"/>
+                    <figcaption>Tama</figcaption>
+                </figure>
+                </span>
             </div>
         </section>
     }
@@ -423,8 +442,10 @@ class Header extends React.Component{
         render() {
             return <div className="container">
                 <Header/>
+                <div className="galleryDiv">
                 <Gallery />
                 <Artists />
+                </div>
                 <Form />
                 <LocationsSite />
                 <Footer/>
