@@ -239,7 +239,7 @@ class Form extends React.Component{
                 <p className="errorTxt">{valOccupation}</p>
                 </fieldset>
                 <fieldset>
-                <p>Preferowany dzień wizyty / Prefered appointment day *:</p>
+                <p>Preferowany dzień wizyty / Prefered appointment day*:</p>
                 <br/>
                 <label>
                 <input type="checkbox" name="weekday" value="Monday"/>Pon/Mon
@@ -335,7 +335,7 @@ class Gallery extends React.Component{
         super(props);
 
         this.state = {
-            gallery: ["./img/photo1.jpg","./img/photo2.jpeg","./img/photo3.jpeg","./img/photo7.png","./img/photo8.png","./img/photo9.png","./img/photo4.jpg","./img/photo5.jpg","./img/photo6.jpg","./img/photo10.jpg","./img/photo11.jpg","./img/photo12.jpg"],
+            gallery: ["./img/photo1.jpg","./img/photo2.jpg","./img/photo3.jpg","./img/photo7.jpg","./img/photo8.jpg","./img/photo9.jpg","./img/photo4.jpg","./img/photo5.jpg","./img/photo6.jpg","./img/photo10.jpg","./img/photo11.jpg","./img/photo12.jpg"],
             img: "./img/photo1.jpg",
         }
     }
@@ -372,25 +372,25 @@ class Gallery extends React.Component{
                     <figcaption>Dudi</figcaption>
                 </figure>
                 <figure>
-                    <img src="./img/photo2.jpeg" alt="tattoo work"/>
+                    <img src="./img/photo2.jpg" alt="tattoo work"/>
                     <figcaption>Dudi</figcaption>
                 </figure>
                 <figure>
-                <img src="./img/photo3.jpeg" alt="tattoo work"/>
+                <img src="./img/photo3.jpg" alt="tattoo work"/>
                 <figcaption>Dudi</figcaption>
                 </figure>
                 </span>
                 <span>
                 <figure>
-                    <img src="./img/photo7.png" alt="tattoo work"/>
+                    <img src="./img/photo7.jpg" alt="tattoo work"/>
                     <figcaption>Chestnut</figcaption>
                 </figure>
                 <figure>
-                    <img src="./img/photo8.png" alt="tattoo work"/>
+                    <img src="./img/photo8.jpg" alt="tattoo work"/>
                     <figcaption>Chestnut</figcaption>
                 </figure>
                 <figure>
-                    <img src="./img/photo9.png" alt="tattoo work"/>
+                    <img src="./img/photo9.jpg" alt="tattoo work"/>
                     <figcaption>Chestnut</figcaption>
                 </figure>
                 </span>
